@@ -19,4 +19,4 @@ build:
               chmod +x ./scripts/InstallChrome.sh
                           ./scripts/InstallChrome.sh 
     - name: Build with Maven
-      run: mvn test --file pom.xml
+      run: mvn compile --file pom.xml

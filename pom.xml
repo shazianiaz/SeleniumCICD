@@ -30,6 +30,9 @@
   </dependencies>
     
     <build>
+            <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>test</testSourceDirectory>
+
         <plugins>
            
             <plugin>
@@ -42,9 +45,6 @@
     </configuration>
 </plugin>             
         </plugins>
-       
-        <sourceDirectory>src</sourceDirectory>
-        <testSourceDirectory>test</testSourceDirectory>
-    
+           
     </build>
 </project>

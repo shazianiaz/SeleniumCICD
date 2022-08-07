@@ -5,9 +5,8 @@ on:
   pull_request:
     branches: [ master ]
  jobs:
-build:
- runs-on: 
-  ubuntu-latest
+build_and_test:
+  runs-on: ubuntu-latest
  steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
@@ -19,4 +18,4 @@ build:
               chmod +x ./scripts/InstallChrome.sh
                           ./scripts/InstallChrome.sh 
     - name: Build with Maven
-      run: mvn compile --file pom.xml
+      run: mvn -B package --file pom.xml

@@ -42,5 +42,9 @@
     </configuration>
 </plugin>             
         </plugins>
+       
+        <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>test</testSourceDirectory>
+    
     </build>
 </project>
